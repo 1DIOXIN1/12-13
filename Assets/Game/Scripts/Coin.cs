@@ -9,6 +9,10 @@ public class Coin : MonoBehaviour
         ScoreCounter scoreCounter = other.GetComponent<ScoreCounter>();
 
         if(scoreCounter != null)
+        {
             scoreCounter.AddScore(_price);
+            Destroy(gameObject);
+        }
+
     }
 }

@@ -7,8 +7,6 @@ public class ScoreCounter : MonoBehaviour
 
     public void AddScore(int score)
     {
-        _score = Mathf.Abs(score);
-
         _score += score;
     }
 }
